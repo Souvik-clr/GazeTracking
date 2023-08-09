@@ -105,6 +105,22 @@ gaze.pupil_right_coords()
 
 Returns the coordinates (x,y) of the right pupil.
 
+### Looking to the top
+
+```python
+gaze.is_top()
+```
+
+Returns `True` if the user is looking to the top.
+
+### Looking to the bottom
+
+```python
+gaze.is_bottom()
+```
+
+Returns `True` if the user is looking to the bottom.
+
 ### Looking to the left
 
 ```python
