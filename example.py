@@ -3,6 +3,7 @@ Demonstration of the GazeTracking library.
 Check the README.md for complete documentation.
 """
 
+#import numpy as np
 import cv2
 from gaze_tracking import GazeTracking
 
@@ -27,6 +28,10 @@ while True:
         text = "Looking left"
     elif gaze.is_center():
         text = "Looking center"
+    elif gaze.is_top():
+        text = "Looking up"
+    elif gaze.is_bottom():
+        text = "Looking down"
 
     cv2.putText(frame, text, (90, 60), cv2.FONT_HERSHEY_DUPLEX, 1.6, (147, 58, 31), 2)
 
